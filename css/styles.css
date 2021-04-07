@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:700");
+
+body     {
+    text-align:center;
+}
+
+h1         {
+    color:#FFF;
+    font-family:'Oswald','Arial';
+    font-weight:700;
+    position:relative;
+    margin:30px auto;
+    text-transform:uppercase;
+    width:750px;
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 32px;
+}
+
+h1::before, h1::after  {
+ background-color: #4A90E2;
+ content: "";
+ display: inline-block;
+ height: 32px;
+ width: 32px;
+ position: absolute;
+}
+
+h1::before {
+// border radius, generator: <https://cssboxshadow.com/border-radius/>
+    border-radius: 200px 10px 10px 200px;
+    -moz-border-radius: 200px 10px 10px 200px;
+    -webkit-border-radius: 200px 10px 10px 200px;
+    border: 0 solid #000000;
+    left: 30px;
+    top: 20px;
+}
+
+h1::after {
+// border radius, generator: <https://cssboxshadow.com/border-radius/>
+    border-radius: 10px 200px 200px 10px;
+    -moz-border-radius: 10px 200px 200px 10px;
+    -webkit-border-radius: 10px 200px 200px 10px;
+    border: 0 solid #000000;
+    right: 30px;
+    top: 20px;
+}
+
+.blokje {
+    text-align:center;
+    padding-top: 100px;
+}
